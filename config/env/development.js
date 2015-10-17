@@ -1,8 +1,9 @@
 'use strict';
 
 module.exports = {
-	db: 'mongodb://bsp-eddie:cookie24@ds035643.mongolab.com:35643/mean-bsp',
-	//db: 'mongodb://localhost/bsp-nyc-dev',
+	//db: 'mongodb://bsp-eddie:cookie24@ds035643.mongolab.com:35643/mean-bsp',
+	db: 'mongodb://localhost/bsp-nyc-dev',
+	//db: 'mongodb://admin:eddie@ds039674.mongolab.com:39674/multimedia',
 	app: {
 		title: 'BSP-NYC - Development Environment'
 	},

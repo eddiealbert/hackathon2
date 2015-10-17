@@ -1,0 +1,43 @@
+<section data-ng-controller="ProductsController">
+    <div class="page-header">
+        <h1>Add Media</h1>
+    </div>
+    <div class="col-xs-6">
+        <form class="form-horizontal" data-ng-submit="create()" novalidate>
+                <div class="form-group">
+                    <label class="control-label" for="name">Title</label>
+                    <div class="controls">
+                        <input type="text" data-ng-model="name" id="name" class="form-control" placeholder="Title" required>
+                    </div>
+                </div>
+				<div class="form-group">
+                    <label class="control-label" for="description">Description</label>
+                    <div class="controls">
+                        <input type="text" data-ng-model="description" id="description" class="form-control" placeholder="Description" required>
+                    </div>
+                </div>
+				<div class="form-group">
+					<label class="control-label" for="fileType">FileType</label>
+					<div>
+						<select data-ng-model="fileType" id="fileType" class="form-control" required>
+						<option value="Music">Music</option>
+						<option value="Video">Video</option>
+						<option value="Image">Image</option>
+						</select>
+					</div>
+				</div>
+				<div class="form-group">
+					<label class="control-label" for="fileName">FileName</label>
+					<div class="controls">
+						<input type="text" data-ng-model="fileName" id="fileName" class="form-control" placeholder="FileName" required>
+					</div>
+				</div>
+                <div class="form-group">
+                    <input type="submit" class="btn btn-default">
+                </div>
+				<div data-ng-show="error" class="text-danger">
+					<strong data-ng-bind="error"></strong>
+				</div>
+        </form>
+    </div>
+</section>

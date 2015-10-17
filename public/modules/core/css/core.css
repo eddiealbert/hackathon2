@@ -1,6 +1,17 @@
 .content {
 	margin-top: 50px;
 }
+
+.tbox {
+  height: 100px;
+  width: 200px;
+  background-color:white;
+  border-radius: 10px;
+  display: inline-block;
+  margin: 15px;
+  vertical-align: top;
+  text-align: center;
+}
 .undecorated-link:hover {
 	text-decoration: none;
 }
